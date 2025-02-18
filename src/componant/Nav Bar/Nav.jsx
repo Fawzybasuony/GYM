@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 
-const Header = () => {
+const Nav = () => {
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-secondary ">
@@ -43,7 +43,7 @@ const Header = () => {
               </li>
 
               <li className="nav-item">
-                <NavLink className="nav-link text-light fs-5" to="/Contactt">
+                <NavLink className="nav-link text-light fs-5" to="/ContactUS">
                   Contact
                 </NavLink>
               </li>
@@ -55,4 +55,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Nav;

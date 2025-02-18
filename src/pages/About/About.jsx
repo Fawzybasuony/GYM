@@ -1,11 +1,10 @@
-import Header from "../componant/header";
+ 
 
 const About = () => {
   return (
     <>
-      <Header />
-      <br />
-      <br />
+    
+    
       <center>
         <h1 className="text-danger fw-bold">OUR PLANS</h1>
         <h2 className="text-primary">Choose Your Pricing Plan</h2>

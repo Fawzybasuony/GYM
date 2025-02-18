@@ -1,12 +1,13 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
+ 
 import   './contact.css';
-import Header from "../header";
+ 
     
-export default function page() {
+export default function ContactUS() {
   return (
     <>
-              <Header />
-    <div>
+ 
+ 
  
   <section className="page-add">
     <div className="container">
@@ -78,7 +79,7 @@ export default function page() {
       </div>
     </div>
   </div>
-</div>
+ 
 
 
 

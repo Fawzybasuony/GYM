@@ -7,7 +7,7 @@ export default function Slidar() {
   return (
     <>
       <div className="main-banner" id="top">
-        <video autoPlay  id="bg-video">
+        <video  autoPlay muted  id="bg-video">
           <source
             src="/img/WhatsApp Video 2024-06-13 at 4.37.24 PM.mp4"
             type="video/mp4"

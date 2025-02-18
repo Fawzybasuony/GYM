@@ -912,8 +912,8 @@ a i:hover {
 }
 
 .active {
-  background-color: rgba(62, 70, 79, 0.8);
   color: rgb(229, 11, 11) !important;
-  border-radius: 3px 30px 3px 30px;
+  font-size: x-large;
+  font-weight: bolder;
   padding: 10px;
 }

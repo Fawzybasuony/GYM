@@ -1,37 +1,20 @@
-/** @format */
-
-
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./pages/home";
-import About from "./pages/about";
-import Contactt from "./componant/contact/Contactt";
-import Footer from "./componant/foter/Footer";
-
-
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />,
-  },
-  {
-    path: "/about",
-    element: <About />,
-  },
-  {
-    path: "/Contactt",
-    element: <Contactt />,
-  },
-
-
-]);
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home/home";
+import About from "./pages/About/About";
+import ContactUS from "./pages/contactUs/ContactUS";
+import { PublicLayout } from "./routes/Layouts";
 
 function App() {
   return (
-    <>
-      <RouterProvider router={router} />
-      <Footer/>
-    </>
+    <Router>
+      <Routes>
+        <Route element={<PublicLayout />}>
+          <Route index element={<Home />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/ContactUS" element={<ContactUS />} />
+        </Route>
+      </Routes>
+    </Router>
   );
 }
 
